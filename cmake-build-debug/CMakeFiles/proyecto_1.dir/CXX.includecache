@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/mike/Documentos/analisis/proyecto 1/def.cpp
+/home/mike/Documentos/analisis/proyecto 1/algorithms/def.cpp
 
-/home/mike/Documentos/analisis/proyecto 1/def.h
+/home/mike/Documentos/analisis/proyecto 1/algorithms/def.h
 iostream
 -
+complex
+-
 boost/math/tools/polynomial.hpp
-/home/mike/Documentos/analisis/proyecto 1/boost/math/tools/polynomial.hpp
+/home/mike/Documentos/analisis/proyecto 1/algorithms/boost/math/tools/polynomial.hpp
 
 /home/mike/Documentos/analisis/proyecto 1/main.cpp
-def.h
-/home/mike/Documentos/analisis/proyecto 1/def.h
+algorithms/def.h
+/home/mike/Documentos/analisis/proyecto 1/algorithms/def.h
 
 /usr/local/boost_1_66_0/boost/array.hpp
 boost/detail/workaround.hpp

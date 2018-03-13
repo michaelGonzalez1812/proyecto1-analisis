@@ -8,6 +8,7 @@
 #define DEFA
 
 #include <iostream>
+#include <complex>
 #include "boost/math/tools/polynomial.hpp"
 
 using namespace boost::math::tools;
@@ -40,8 +41,5 @@ namespace algoritmos {
 
         return resultado;
     }
-
-    
-
 }
 #endif //PROYECTO_1_DEFALT_H

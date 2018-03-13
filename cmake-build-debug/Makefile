@@ -136,32 +136,32 @@ BoostTest/fast:
 	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/build
 .PHONY : BoostTest/fast
 
-def.o: def.cpp.o
+algorithms/def.o: algorithms/def.cpp.o
 
-.PHONY : def.o
+.PHONY : algorithms/def.o
 
 # target to build an object file
-def.cpp.o:
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/def.cpp.o
-.PHONY : def.cpp.o
+algorithms/def.cpp.o:
+	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/algorithms/def.cpp.o
+.PHONY : algorithms/def.cpp.o
 
-def.i: def.cpp.i
+algorithms/def.i: algorithms/def.cpp.i
 
-.PHONY : def.i
+.PHONY : algorithms/def.i
 
 # target to preprocess a source file
-def.cpp.i:
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/def.cpp.i
-.PHONY : def.cpp.i
+algorithms/def.cpp.i:
+	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/algorithms/def.cpp.i
+.PHONY : algorithms/def.cpp.i
 
-def.s: def.cpp.s
+algorithms/def.s: algorithms/def.cpp.s
 
-.PHONY : def.s
+.PHONY : algorithms/def.s
 
 # target to generate assembly for a file
-def.cpp.s:
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/def.cpp.s
-.PHONY : def.cpp.s
+algorithms/def.cpp.s:
+	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/algorithms/def.cpp.s
+.PHONY : algorithms/def.cpp.s
 
 main.o: main.cpp.o
 
@@ -203,9 +203,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... proyecto_1"
 	@echo "... BoostTest"
-	@echo "... def.o"
-	@echo "... def.i"
-	@echo "... def.s"
+	@echo "... algorithms/def.o"
+	@echo "... algorithms/def.i"
+	@echo "... algorithms/def.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

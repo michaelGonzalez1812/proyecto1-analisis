@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(BOOST_ROOT "/usr/local/boost_1_66_0")
 set(BOOSTROOT "/usr/local/boost_1_66_0")
-set(SOURCE_FILES main.cpp def.cpp)
+set(SOURCE_FILES main.cpp algorithms/def.cpp)
 
 find_package(Boost 1.66.0)
 
@@ -21,4 +21,4 @@ else()
     target_link_libraries(BoostTest ${Boost_LIBRARIES})
 endif()
 
-add_executable(proyecto_1 main.cpp def.cpp def.h)
+add_executable(proyecto_1 main.cpp algorithms/def.cpp algorithms/def.h)
