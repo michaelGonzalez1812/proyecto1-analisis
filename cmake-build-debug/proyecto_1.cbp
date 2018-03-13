@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/boost_1_66_0"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -67,6 +68,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/boost_1_66_0"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -83,9 +85,64 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="BoostTest">
+				<Option output="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/BoostTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/boost_1_66_0"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 BoostTest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BoostTest/fast">
+				<Option output="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/BoostTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/boost_1_66_0"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 BoostTest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/def.cpp">
+			<Option target="proyecto_1"/>
+		</Unit>
+		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/def.h">
+			<Option target="proyecto_1"/>
+		</Unit>
 		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/main.cpp">
 			<Option target="proyecto_1"/>
+			<Option target="BoostTest"/>
 		</Unit>
 		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

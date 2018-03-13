@@ -123,6 +123,46 @@ proyecto_1/fast:
 	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/build
 .PHONY : proyecto_1/fast
 
+#=============================================================================
+# Target rules for targets named BoostTest
+
+# Build rule for target.
+BoostTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BoostTest
+.PHONY : BoostTest
+
+# fast build rule for target.
+BoostTest/fast:
+	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/build
+.PHONY : BoostTest/fast
+
+def.o: def.cpp.o
+
+.PHONY : def.o
+
+# target to build an object file
+def.cpp.o:
+	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/def.cpp.o
+.PHONY : def.cpp.o
+
+def.i: def.cpp.i
+
+.PHONY : def.i
+
+# target to preprocess a source file
+def.cpp.i:
+	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/def.cpp.i
+.PHONY : def.cpp.i
+
+def.s: def.cpp.s
+
+.PHONY : def.s
+
+# target to generate assembly for a file
+def.cpp.s:
+	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/def.cpp.s
+.PHONY : def.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -130,6 +170,7 @@ main.o: main.cpp.o
 # target to build an object file
 main.cpp.o:
 	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -139,6 +180,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -148,6 +190,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -159,6 +202,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... proyecto_1"
+	@echo "... BoostTest"
+	@echo "... def.o"
+	@echo "... def.i"
+	@echo "... def.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
