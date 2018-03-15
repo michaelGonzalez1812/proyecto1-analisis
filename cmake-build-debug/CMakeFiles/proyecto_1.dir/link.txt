@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/proyecto_1.dir/main.cpp.o CMakeFiles/proyecto_1.dir/algorithms/def.cpp.o  -o proyecto_1 
+/usr/bin/c++  -g   CMakeFiles/proyecto_1.dir/main.cpp.o CMakeFiles/proyecto_1.dir/algorithms/def.cpp.o CMakeFiles/proyecto_1.dir/algorithms/rootMuller.cpp.o  -o proyecto_1 

@@ -163,6 +163,33 @@ algorithms/def.cpp.s:
 	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/algorithms/def.cpp.s
 .PHONY : algorithms/def.cpp.s
 
+algorithms/rootMuller.o: algorithms/rootMuller.cpp.o
+
+.PHONY : algorithms/rootMuller.o
+
+# target to build an object file
+algorithms/rootMuller.cpp.o:
+	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/algorithms/rootMuller.cpp.o
+.PHONY : algorithms/rootMuller.cpp.o
+
+algorithms/rootMuller.i: algorithms/rootMuller.cpp.i
+
+.PHONY : algorithms/rootMuller.i
+
+# target to preprocess a source file
+algorithms/rootMuller.cpp.i:
+	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/algorithms/rootMuller.cpp.i
+.PHONY : algorithms/rootMuller.cpp.i
+
+algorithms/rootMuller.s: algorithms/rootMuller.cpp.s
+
+.PHONY : algorithms/rootMuller.s
+
+# target to generate assembly for a file
+algorithms/rootMuller.cpp.s:
+	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/algorithms/rootMuller.cpp.s
+.PHONY : algorithms/rootMuller.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -206,6 +233,9 @@ help:
 	@echo "... algorithms/def.o"
 	@echo "... algorithms/def.i"
 	@echo "... algorithms/def.s"
+	@echo "... algorithms/rootMuller.o"
+	@echo "... algorithms/rootMuller.i"
+	@echo "... algorithms/rootMuller.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

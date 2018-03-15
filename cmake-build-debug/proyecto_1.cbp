@@ -140,6 +140,12 @@
 		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/def.h">
 			<Option target="proyecto_1"/>
 		</Unit>
+		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.cpp">
+			<Option target="proyecto_1"/>
+		</Unit>
+		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.h">
+			<Option target="proyecto_1"/>
+		</Unit>
 		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/main.cpp">
 			<Option target="proyecto_1"/>
 			<Option target="BoostTest"/>
