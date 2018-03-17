@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/mike/Documentos/analisis/proyecto 1/algorithms/def.cpp
-
-/home/mike/Documentos/analisis/proyecto 1/algorithms/def.h
+/home/mike/Documentos/analisis/proyecto 1/algorithms/deflate.h
 iostream
 -
 complex
@@ -16,17 +14,15 @@ complex
 boost/math/tools/polynomial.hpp
 /home/mike/Documentos/analisis/proyecto 1/algorithms/boost/math/tools/polynomial.hpp
 
-/home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.cpp
-rootMuller.h
-/home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.h
-
 /home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.h
 boost/math/tools/polynomial.hpp
 /home/mike/Documentos/analisis/proyecto 1/algorithms/boost/math/tools/polynomial.hpp
+complex
+-
 
 /home/mike/Documentos/analisis/proyecto 1/main.cpp
-algorithms/def.h
-/home/mike/Documentos/analisis/proyecto 1/algorithms/def.h
+algorithms/deflate.h
+/home/mike/Documentos/analisis/proyecto 1/algorithms/deflate.h
 algorithms/rootMuller.h
 /home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.h
 

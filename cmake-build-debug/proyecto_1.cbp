@@ -134,13 +134,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/def.cpp">
-			<Option target="proyecto_1"/>
-		</Unit>
-		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/def.h">
-			<Option target="proyecto_1"/>
-		</Unit>
-		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.cpp">
+		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/deflate.h">
 			<Option target="proyecto_1"/>
 		</Unit>
 		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.h">

@@ -6,6 +6,8 @@
 #define PROYECTO_1_ROOTMULLER_H
 
 #include "boost/math/tools/polynomial.hpp"
+#include <complex>
+
 
 using namespace boost::math::tools;
 
@@ -14,51 +16,62 @@ using namespace boost::math::tools;
  * @tparam T
  * @param poly Polinomio para encontrar la raiz.
  * @param xr Aproximacion de raiz inicial.
- * @param h Factor para calcular "x0" y "x1" iniciales. Recomendacion h = 0.1.
+ * @param h Factor para calcular "x0" y "x1" iniciales.
  * @param eps
  * @param maxit Maximo de iteraciones.
  * @return Raiz encontrada.
  */
 template <typename T>
-T muller (const polynomial<T>& poly, T xr, T h, T eps, T maxit){
-    //TODO No funciona en raices negativas. Revisar
-    //TODO implementarlo con raices complejas.
+std::complex<T> muller (const polynomial<std::complex<T>>& poly, std::complex<T> xr, std::complex<T> h,
+                        std::complex<T> eps, int maxit){
 
-    T x2, x1, x0;
-    T h0, h1, d0, d1, a, b, c;
-    T rad, dxr, den;
+        /*
+         * Declaracion de constantes.
+         * Error si se hace directo.
+         */
+        const std::complex<T> CUATRO = 4.0 + 0.0i;
+        const std::complex<T> DOS    = 2.0 + 0.0i;
+        const std::complex<T> CERO   = 0.0 + 0.0i;
+        const std::complex<T> UNO_PUNTO_CINCO = 1.5 + 0.0i;
+        const std::complex<T> UNO    = 1.0 + 0.0i;
 
-    x2 = xr;
-    x1 = xr + h*xr;
-    x0 = xr - h*xr;
+        std::complex<T> x2, x1, x0;
+        std::complex<T> h0, h1, d0, d1, a, b, c;
+        std::complex<T> rad, den, dxr;
 
-    for (int i = 0; i < maxit; ++i) {
-
-        h0 = x1 + x0;
-        h1 = x2 - x1;
-        d0 = (poly.evaluate(x1) - poly.evaluate(x0)) / h0;
-        d1 = (poly.evaluate(x2) - poly.evaluate(x1)) / h1;
-        a = (d1 - d0) / (h1 + h0);
-        b = a*h1 + d1;
-        c = poly.evaluate(x2);
-
-        rad = std::sqrt(b*b - 4*a*c);
-        if(std::abs(b + rad) > std::abs(b - rad))
-            den = b + rad;
-        else
-            den = b - rad;
-
-        // TODO unir estas dos lineas
-        dxr = -2*c / den;
-        xr = x2 + dxr;
-
-        if (std::abs(dxr) < eps*xr) break;
-
-        x0 = x1;
-        x1 = x2;
         x2 = xr;
-    }
-    return xr;
+        x1 = xr == CERO ? UNO_PUNTO_CINCO : xr + h*xr;
+        x0 = xr == CERO ? -UNO : xr - h*xr;
+
+        for (int i = 0; i < maxit; ++i) {
+
+                h0 = x1 + x0;
+                h1 = x2 - x1;
+                d0 = (poly.evaluate(x1) - poly.evaluate(x0)) / h0;
+                d1 = (poly.evaluate(x2) - poly.evaluate(x1)) / h1;
+                a = (d1 - d0) / (h1 + h0);
+                b = a*h1 + d1;
+                c = poly.evaluate(x2);
+
+                //con xr negativo esto da nan
+
+                rad = std::sqrt(b*b - CUATRO*a*c);
+                if(std::abs(b + rad) > std::abs(b - rad))
+                        den = b + rad;
+                else
+                        den = b - rad;
+
+                dxr = -DOS*c / den;
+                xr = x2 + dxr;
+
+                if (std::abs(dxr) < std::abs(eps*xr)) break;
+
+                x0 = x1;
+                x1 = x2;
+                x2 = xr;
+        }
+
+        return xr;
 }
 
 #endif //PROYECTO_1_ROOTMULLER_H
