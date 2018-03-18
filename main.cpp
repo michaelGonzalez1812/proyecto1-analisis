@@ -1,5 +1,6 @@
 #include "algorithms/deflate.h"
 #include "algorithms/rootMuller.h"
+#include <cstdlib>
 
 using namespace boost::math::tools;
 using namespace std;
@@ -7,8 +8,13 @@ using boost::lexical_cast;
 using namespace boost::math;
 
 
-int main()
+int main(int argc, char * argv [])
 {
+//    cout << "Numero de parametros:   " << argc << endl;
+//
+//    for (int i = 0; i < argc; i++)
+//        cout << "parametro " << i + 1 << ": " << atoi(argv[i]) + atoi(argv[i]) << endl;
+
 
     return 0;
 }
@@ -25,6 +31,8 @@ int main()
 //Prueba deflacion ---------------------------------------------
 //const boost::array<float, 3> factoresOrig = {{-6, 1, 1}};
 //polynomial<float> original(factoresOrig.begin(), factoresOrig.end());
-//polynomial<float> original2(factoresOrig.begin(), factoresOrig.end());
 //float raiz = 2;
-//cout << "Resultado:  " << algoritmos::deflate<float>(original, raiz, original2) << endl;
+//float residuo = 5;
+//
+//cout << "Resultado:  " << algoritmos::deflate<float>(original, raiz, residuo) << endl;
+//cout << "residuo:    " << residuo << endl;

@@ -26,17 +26,17 @@ namespace algoritmos {
  * @return Polinomio deflacionado
  */
     template <typename T>
-    polynomial<T> deflate(const polynomial<T>& poly, const T& root, polynomial<T>& residuo) {
+    polynomial<T> deflate(const polynomial<T>& poly, const T& root, T& residuo) {
         polynomial<T> resultado = poly;
 
-        T r = resultado[ resultado.degree() ];
+        residuo = resultado[ resultado.degree() ];
         resultado[ resultado.degree() ] = 0;
         T auxiliar;
 
         for(int i = resultado.degree() - 1; i >= 0; --i){
             auxiliar = resultado[i];
-            resultado[i] = r;
-            r = auxiliar + r * root;
+            resultado[i] = residuo;
+            residuo = auxiliar + residuo * root;
         }
 
         return resultado;
