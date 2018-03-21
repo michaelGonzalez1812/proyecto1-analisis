@@ -40,15 +40,15 @@ std::complex<T> LaguerreMethod(const polynomial<std::complex<T>> &poly, std::com
         d = std::complex<T>(0, 0);
         f = std::complex<T>(0, 0);
         for (int j = m.real() - 1; j >= 0; j--) {
-            f = xr * f + d;//Second derivative
-            d = xr * d + b;//First derivative
-            b = xr * b + poly.data()[j];//Polynom evaluation
-            err = abs(b) + abs(xr) * err;//Error term
+            f = xr * f + d;// segunda derivada
+            d = xr * d + b;// primera derivada
+            b = xr * b + poly.data()[j];
+            err = abs(b) + abs(xr) * err; // calculo de error
         }
         err *= eps;
-        if (abs(b) < abs(err)) return xr;//x is already a root
+        if (abs(b) < abs(err)) return xr;// ya se encontro la raiz
 
-        //Laguerre method
+        //LaguerreMethod
         g = d / b;// G(x_k) = P'(x_k) / P(x_k). ([1], eq. 7.10)
         h = g * g - T(2) * f / b;// H(x_k) = G(x_k)^2 - (P''(x_k)/P(x_k)). ([1], eq. 7.11)
         gp = g + sqrt((m - T(1)) * (m * h - g * g));
@@ -57,7 +57,6 @@ std::complex<T> LaguerreMethod(const polynomial<std::complex<T>> &poly, std::com
         if (std::max(abs(gp), abs(gm)) > 0) dx = m / gp;//([1], eq. 7.12)
         else dx = (T(1) + abs(xr)) * std::complex<T>(cos(T(1) * it), sin(T(1) * it));
         x1 = xr - dx;
-        //This procedure is reapeated until dx -> 0 or the maximum number of iterations is exceeded
         if ((xr.real() == x1.real()) && (xr.imag() == x1.imag())) return xr;
         if (it % 10) xr = x1;
         else xr = xr - std::complex<T>(frac[it / 10], 0) * dx;
@@ -90,10 +89,10 @@ T LaguerreMethod(const polynomial<T> &poly, T xr,
         d = T(0, 0);
         f = T(0, 0);
         for (int j = m.real() - 1; j >= 0; j--) {
-            f = xr * f + d;//Second derivative
-            d = xr * d + b;//First derivative
-            b = xr * b + poly.data()[j];//Polynom evaluation
-            err = abs(b) + abs(xr) * err;//Error term
+            f = xr * f + d;// segunda derivada
+            d = xr * d + b;// primera derivada
+            b = xr * b + poly.data()[j];
+            err = abs(b) + abs(xr) * err;// calculo del error
         }
         err *= eps;
         if (abs(b) < abs(err)) return xr;// se encontro la raiz

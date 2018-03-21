@@ -89,7 +89,19 @@
 		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/LaguerreMethod.hpp">
 			<Option target="proyecto1"/>
 		</Unit>
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/deflate.h">
+			<Option target="proyecto1"/>
+		</Unit>
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/deflate.hpp">
+			<Option target="proyecto1"/>
+		</Unit>
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/prueba.h">
+			<Option target="proyecto1"/>
+		</Unit>
 		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/rootMuller.h">
+			<Option target="proyecto1"/>
+		</Unit>
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/rootMuller.hpp">
 			<Option target="proyecto1"/>
 		</Unit>
 		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/main.cpp">
