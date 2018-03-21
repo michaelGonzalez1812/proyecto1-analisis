@@ -112,4 +112,27 @@ T LaguerreMethod(const polynomial<T> &poly, T xr,
     return xr;
 }
 
+template <typename T>
+vector<T> LaguerreFull(const polynomial<T>& poly, T xr, bool pulido){
+    polynomial<T> temp(poly);
+    polynomial<std::complex<T>> tempcomplex(poly);
+    polynomial<std::complex<T>> r;
+    vector<T> raices;
+    T raiz;
+    std::complex<T> raiztemp;
+    T resi=0;
+    for(int i=0;i<poly.degree();i++){
+        raiztemp= LaguerreMethod<T>(temp,xr);
+        if(raiztemp.imag()==0){
+            raices.push_back(raiz);
+            temp=deflate(temp,raiz,resi);
+            tempcomplex=polynomial<std::complex<T>>(temp);
+        } else{
+            std::cout << "Se encontro una raiz imaginaria: "<<raiztemp.real()<<"+"<<raiztemp.imag()<<"i" << std::endl;
+            //tempcomplex=deflate2(temp,raiz,r);
+        }
+    }
+    return raices;
+}
+
 #endif //PROYECTO_1_LAGUERREMETHOD_H

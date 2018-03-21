@@ -1,4 +1,4 @@
-//#include "algorithms/deflate.h"
+#include "algorithms/DeflateMethod.hpp"
 #include "algorithms/MullerMethod.h"
 #include "algorithms/LaguerreMethod.hpp"
 
@@ -7,18 +7,20 @@ int main(int argc, char *argv[]) {
 //
 //    for (int i = 0; i < argc; i++)
 //        cout << "parametro " << i + 1 << ": " << atoi(argv[i]) + atoi(argv[i]) << endl;
-    polynomial<double> a{{1.0, 2, 1.0}};
+    polynomial<double> a{{1.0, 2.0, 1.0}};
     polynomial<std::complex<double>> temp(a);
     std::complex<double> result = LaguerreMethod<std::complex<double>>(temp, 0.0 + 0.0i);
     std::cout << (result) << std::endl;
-    std::complex<double> result2 = LaguerreMethod<double>(a, 0.0);
+    vector<double> v=LaguerreFull<double>(a,0,0);
     //double result2=muller<double>(a,0.0,0.00001,0.00000001,100);
-    std::cout << (result2) << std::endl;
+    std::cout << (v[2]) << std::endl;
 
     std::complex<float> result3 = LaguerreMethod<std::complex<float>>(a, float(0));
     //double result2=muller<double>(a,0.0,0.00001,0.00000001,100);
     std::cout << (result3) << std::endl;
-
+    double kk=0.00001;
+    polynomial<double> k = deflate(a,-1.0,kk);
+    std::cout << (k) << std::endl;
     return 0;
 }
 

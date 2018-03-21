@@ -86,22 +86,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/DeflateMethod.hpp">
+			<Option target="proyecto1"/>
+		</Unit>
 		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/LaguerreMethod.hpp">
 			<Option target="proyecto1"/>
 		</Unit>
-		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/deflate.h">
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/MullerMethod.h">
 			<Option target="proyecto1"/>
 		</Unit>
-		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/deflate.hpp">
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/MullerMethod.hpp">
 			<Option target="proyecto1"/>
 		</Unit>
 		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/prueba.h">
-			<Option target="proyecto1"/>
-		</Unit>
-		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/rootMuller.h">
-			<Option target="proyecto1"/>
-		</Unit>
-		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/rootMuller.hpp">
 			<Option target="proyecto1"/>
 		</Unit>
 		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/main.cpp">
