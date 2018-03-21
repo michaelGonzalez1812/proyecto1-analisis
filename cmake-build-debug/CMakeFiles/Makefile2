@@ -45,91 +45,54 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/estape11/Escritorio/Programas/clion-2017.3.4/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
+RM = /home/estape11/Escritorio/Programas/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/mike/Documentos/analisis/proyecto 1"
+CMAKE_SOURCE_DIR = /home/estape11/Descargas/proyecto1-analisis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/estape11/Descargas/proyecto1-analisis/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/proyecto_1.dir
+# Target rules for target CMakeFiles/proyecto1.dir
 
 # All Build rule for target.
-CMakeFiles/proyecto_1.dir/all:
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/depend
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles" --progress-num=3,4 "Built target proyecto_1"
-.PHONY : CMakeFiles/proyecto_1.dir/all
+CMakeFiles/proyecto1.dir/all:
+	$(MAKE) -f CMakeFiles/proyecto1.dir/build.make CMakeFiles/proyecto1.dir/depend
+	$(MAKE) -f CMakeFiles/proyecto1.dir/build.make CMakeFiles/proyecto1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target proyecto1"
+.PHONY : CMakeFiles/proyecto1.dir/all
 
 # Include target in all.
-all: CMakeFiles/proyecto_1.dir/all
+all: CMakeFiles/proyecto1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/proyecto_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/proyecto_1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/proyecto_1.dir/rule
+CMakeFiles/proyecto1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/proyecto1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/proyecto1.dir/rule
 
 # Convenience name for target.
-proyecto_1: CMakeFiles/proyecto_1.dir/rule
+proyecto1: CMakeFiles/proyecto1.dir/rule
 
-.PHONY : proyecto_1
-
-# clean rule for target.
-CMakeFiles/proyecto_1.dir/clean:
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/clean
-.PHONY : CMakeFiles/proyecto_1.dir/clean
+.PHONY : proyecto1
 
 # clean rule for target.
-clean: CMakeFiles/proyecto_1.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/BoostTest.dir
-
-# All Build rule for target.
-CMakeFiles/BoostTest.dir/all:
-	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/depend
-	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target BoostTest"
-.PHONY : CMakeFiles/BoostTest.dir/all
-
-# Include target in all.
-all: CMakeFiles/BoostTest.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/BoostTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/BoostTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/BoostTest.dir/rule
-
-# Convenience name for target.
-BoostTest: CMakeFiles/BoostTest.dir/rule
-
-.PHONY : BoostTest
+CMakeFiles/proyecto1.dir/clean:
+	$(MAKE) -f CMakeFiles/proyecto1.dir/build.make CMakeFiles/proyecto1.dir/clean
+.PHONY : CMakeFiles/proyecto1.dir/clean
 
 # clean rule for target.
-CMakeFiles/BoostTest.dir/clean:
-	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/clean
-.PHONY : CMakeFiles/BoostTest.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/BoostTest.dir/clean
+clean: CMakeFiles/proyecto1.dir/clean
 
 .PHONY : clean
 

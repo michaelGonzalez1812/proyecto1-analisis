@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/estape11/Escritorio/Programas/clion-2017.3.4/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
+RM = /home/estape11/Escritorio/Programas/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/mike/Documentos/analisis/proyecto 1"
+CMAKE_SOURCE_DIR = /home/estape11/Descargas/proyecto1-analisis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/estape11/Descargas/proyecto1-analisis/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/estape11/Escritorio/Programas/clion-2017.3.4/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/estape11/Escritorio/Programas/clion-2017.3.4/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles" "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/CMakeFiles /home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named proyecto_1
+# Target rules for targets named proyecto1
 
 # Build rule for target.
-proyecto_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 proyecto_1
-.PHONY : proyecto_1
+proyecto1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 proyecto1
+.PHONY : proyecto1
 
 # fast build rule for target.
-proyecto_1/fast:
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/build
-.PHONY : proyecto_1/fast
-
-#=============================================================================
-# Target rules for targets named BoostTest
-
-# Build rule for target.
-BoostTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BoostTest
-.PHONY : BoostTest
-
-# fast build rule for target.
-BoostTest/fast:
-	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/build
-.PHONY : BoostTest/fast
+proyecto1/fast:
+	$(MAKE) -f CMakeFiles/proyecto1.dir/build.make CMakeFiles/proyecto1.dir/build
+.PHONY : proyecto1/fast
 
 main.o: main.cpp.o
 
@@ -142,8 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/main.cpp.o
-	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/proyecto1.dir/build.make CMakeFiles/proyecto1.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -152,8 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/main.cpp.i
-	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/proyecto1.dir/build.make CMakeFiles/proyecto1.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -162,8 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/proyecto_1.dir/build.make CMakeFiles/proyecto_1.dir/main.cpp.s
-	$(MAKE) -f CMakeFiles/BoostTest.dir/build.make CMakeFiles/BoostTest.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/proyecto1.dir/build.make CMakeFiles/proyecto1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -174,8 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... proyecto_1"
-	@echo "... BoostTest"
+	@echo "... proyecto1"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,15 +1,26 @@
-#include "algorithms/deflate.h"
+//#include "algorithms/deflate.h"
 #include "algorithms/rootMuller.h"
 #include <cstdlib>
-
-using namespace boost::math::tools;
-using namespace std;
-using boost::lexical_cast;
-using namespace boost::math;
-
+#include <iostream>
+#include "algorithms/LaguerreMethod.hpp"
 
 int main(int argc, char * argv [])
 {
+//    cout << "Numero de parametros:   " << argc << endl;
+//
+//    for (int i = 0; i < argc; i++)
+//        cout << "parametro " << i + 1 << ": " << atoi(argv[i]) + atoi(argv[i]) << endl;
+    polynomial<double> a {{1.0,2,1.0}};
+    polynomial<std::complex<double>> temp(a);
+    std::complex<double> result=LaguerreMethod<std::complex<double>>(temp,0.0+0.0i);
+    std::cout<<(result)<<std::endl;
+    std::complex<double> result2=LaguerreMethod<double>(a,0.0);
+    //double result2=muller<double>(a,0.0,0.00001,0.00000001,100);
+    std::cout<<(result2)<<std::endl;
+
+    std::complex<float> result3=LaguerreMethod<std::complex<float>>(a,float(0));
+    //double result2=muller<double>(a,0.0,0.00001,0.00000001,100);
+    std::cout<<(result3)<<std::endl;
 
     return 0;
 }
@@ -31,16 +42,3 @@ int main(int argc, char * argv [])
 //
 //cout << "Resultado:  " << algoritmos::deflate<float>(original, raiz, residuo) << endl;
 //cout << "residuo:    " << residuo << endl;
-
-//Prueba deflacion 2--------------------------------------------
-//const boost::array<float, 5> dividendoFactores = {{-18, 9, 7, 1, 1}};
-//polynomial<float> dividendoAux(dividendoFactores.begin(), dividendoFactores.end());
-//polynomial<std::complex<float>> dividendo = dividendoAux;
-//const std::complex<float> raiz = 0+3i;
-//const boost::array<float, 4> residuoFactores = {{1, 1, 1, 1}};
-//polynomial<float> residuoAux(dividendoFactores.begin(), dividendoFactores.end());
-//polynomial<std::complex<float>> residuo = residuoAux;
-//
-//cout << "Resultado:  " << algoritmos::deflate2<float>(dividendo, raiz, residuo) << endl;
-//cout << "residuo:    " << residuo << endl;
-//cout << "dividendo:  " << dividendo << endl;

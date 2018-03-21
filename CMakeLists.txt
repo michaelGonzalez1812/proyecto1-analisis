@@ -3,8 +3,7 @@ project(proyecto_1)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(BOOST_ROOT "/usr/local/boost_1_66_0")
-set(BOOSTROOT "/usr/local/boost_1_66_0")
+include_directories(${CMAKE_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
 set(SOURCE_FILES main.cpp)
 
 find_package(Boost 1.66.0)
@@ -17,8 +16,6 @@ else()
     message(STATUS "Boost_VERSION: ${Boost_VERSION}")
 
     include_directories(${Boost_INCLUDE_DIRS})
-    add_executable(BoostTest main.cpp)
-    target_link_libraries(BoostTest ${Boost_LIBRARIES})
+    add_executable(proyecto1 main.cpp algorithms/rootMuller.h algorithms/LaguerreMethod.hpp )
+    target_link_libraries(proyecto1 ${Boost_LIBRARIES})
 endif()
-
-add_executable(proyecto_1 main.cpp algorithms/deflate.h algorithms/rootMuller.h)

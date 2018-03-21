@@ -8,143 +8,94 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"/>
+				<Option working_dir="/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"/>
+				<Option working_dir="/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"/>
+				<Option working_dir="/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="proyecto_1">
-				<Option output="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/proyecto_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"/>
+			<Target title="proyecto1">
+				<Option output="/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/proyecto1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/boost_1_66_0"/>
+					<Add directory="/home/estape11/Descargas/proyecto1-analisis/include"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 proyecto_1"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 proyecto1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="proyecto_1/fast">
-				<Option output="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/proyecto_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"/>
+			<Target title="proyecto1/fast">
+				<Option output="/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/proyecto1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/boost_1_66_0"/>
+					<Add directory="/home/estape11/Descargas/proyecto1-analisis/include"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 proyecto_1/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BoostTest">
-				<Option output="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/BoostTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/boost_1_66_0"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 BoostTest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BoostTest/fast">
-				<Option output="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/BoostTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/boost_1_66_0"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 BoostTest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/proyecto\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 proyecto1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/deflate.h">
-			<Option target="proyecto_1"/>
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/LaguerreMethod.hpp">
+			<Option target="proyecto1"/>
 		</Unit>
-		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.h">
-			<Option target="proyecto_1"/>
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/algorithms/rootMuller.h">
+			<Option target="proyecto1"/>
 		</Unit>
-		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/main.cpp">
-			<Option target="proyecto_1"/>
-			<Option target="BoostTest"/>
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/main.cpp">
+			<Option target="proyecto1"/>
 		</Unit>
-		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/CMakeLists.txt">
+		<Unit filename="/home/estape11/Descargas/proyecto1-analisis/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -1,8 +1,8 @@
-/home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/mike/Documentos/analisis/proyecto 1"
+/home/estape11/Escritorio/Programas/clion-2017.3.4/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/estape11/Descargas/proyecto1-analisis
 -- Boost version: 1.66.0
--- Boost_INCLUDE_DIRS: /usr/local/boost_1_66_0
+-- Boost_INCLUDE_DIRS: /usr/local/include
 -- Boost_LIBRARIES: 
 -- Boost_VERSION: 106600
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/mike/Documentos/analisis/proyecto 1/cmake-build-debug
+-- Build files have been written to: /home/estape11/Descargas/proyecto1-analisis/cmake-build-debug

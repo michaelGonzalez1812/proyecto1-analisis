@@ -1,4 +1,3 @@
-/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles/proyecto_1.dir
-/home/mike/Documentos/analisis/proyecto 1/cmake-build-debug/CMakeFiles/BoostTest.dir
+/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/estape11/Descargas/proyecto1-analisis/cmake-build-debug/CMakeFiles/proyecto1.dir
