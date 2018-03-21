@@ -17,7 +17,7 @@ else()
     message(STATUS "Boost_VERSION: ${Boost_VERSION}")
 
     include_directories(${Boost_INCLUDE_DIRS})
-    add_executable(BoostTest main.cpp)
+    add_executable(BoostTest main.cpp algorithms/prueba.h)
     target_link_libraries(BoostTest ${Boost_LIBRARIES})
 endif()
 

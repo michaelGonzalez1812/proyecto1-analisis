@@ -137,6 +137,9 @@
 		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/deflate.h">
 			<Option target="proyecto_1"/>
 		</Unit>
+		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/prueba.h">
+			<Option target="BoostTest"/>
+		</Unit>
 		<Unit filename="/home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.h">
 			<Option target="proyecto_1"/>
 		</Unit>

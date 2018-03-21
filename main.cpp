@@ -1,6 +1,8 @@
 #include "algorithms/deflate.h"
 #include "algorithms/rootMuller.h"
 #include <cstdlib>
+#include "algorithms/prueba.h"
+#include <typeinfo>
 
 using namespace boost::math::tools;
 using namespace std;
@@ -18,10 +20,10 @@ int main(int argc, char * argv [])
 //polynomial<double> a {{-18, 9, 7, 1, 1}}; //Polinomio para presentar resultados (especificaion).
 //polynomial<std::complex<double>> b = a;
 //
-//const std::complex<double> XR = 0 - 0i;
-//const std::complex<double> H = 0.0001 + 0.0i;
+//const double XR =-3;
+//const double H = 0.0001;
 //
-//cout << "raiz encontrada:   " << muller<double>(b, XR, XR, H, 100) << endl;
+//cout << "raiz encontrada:   " << muller<double>(a, XR, H, 0.0001, 100) << endl;
 
 //Prueba deflacion ---------------------------------------------
 //const boost::array<float, 3> factoresOrig = {{-6, 1, 1}};
@@ -44,3 +46,19 @@ int main(int argc, char * argv [])
 //cout << "Resultado:  " << algoritmos::deflate2<float>(dividendo, raiz, residuo) << endl;
 //cout << "residuo:    " << residuo << endl;
 //cout << "dividendo:  " << dividendo << endl;
+//
+//#include <iostream>
+//#include <type_traits>
+//#include <typeinfo>
+//
+//int main()
+//{
+//    typedef std::conditional<true, int, double>::type Type1;
+//    typedef std::conditional<false, int, double>::type Type2;
+//    typedef std::conditional<sizeof(int) >= sizeof(double), int, double>::type Type3;
+//
+//    std::cout << typeid(Type1).name() << '\n';
+//    std::cout << typeid(Type2).name() << '\n';
+//    std::cout << typeid(Type3).name() << '\n';
+//}
+

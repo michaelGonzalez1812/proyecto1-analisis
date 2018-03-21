@@ -14,10 +14,24 @@ complex
 boost/math/tools/polynomial.hpp
 /home/mike/Documentos/analisis/proyecto 1/algorithms/boost/math/tools/polynomial.hpp
 
+/home/mike/Documentos/analisis/proyecto 1/algorithms/prueba.h
+boost/math/tools/polynomial.hpp
+/home/mike/Documentos/analisis/proyecto 1/algorithms/boost/math/tools/polynomial.hpp
+complex
+-
+iostream
+-
+
 /home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.h
 boost/math/tools/polynomial.hpp
 /home/mike/Documentos/analisis/proyecto 1/algorithms/boost/math/tools/polynomial.hpp
 complex
+-
+typeinfo
+-
+iostream
+-
+type_traits
 -
 
 /home/mike/Documentos/analisis/proyecto 1/main.cpp
@@ -26,6 +40,10 @@ algorithms/deflate.h
 algorithms/rootMuller.h
 /home/mike/Documentos/analisis/proyecto 1/algorithms/rootMuller.h
 cstdlib
+-
+algorithms/prueba.h
+/home/mike/Documentos/analisis/proyecto 1/algorithms/prueba.h
+typeinfo
 -
 
 /usr/local/boost_1_66_0/boost/array.hpp
