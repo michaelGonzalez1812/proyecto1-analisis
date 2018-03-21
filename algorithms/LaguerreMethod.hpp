@@ -76,7 +76,7 @@ std::complex<T> LaguerreMethod(const polynomial<std::complex<T>> &poly, std::com
 
 template<typename T>
 T LaguerreMethod(const polynomial<T> &poly, T xr,
-                 T eps = sqrt(std::numeric_limits<T>::epsilon())/T(10),
+                 T eps = sqrt(std::numeric_limits<T>::epsilon()) / T(10),
                  int maxi = 100,
                  typename std::enable_if<boost::is_complex<T>::value, T>::type * = 0) {
     polynomial<double> frac = {0.0, 0.5, 0.25, 0.75, 0.13, 0.38, 0.62, 0.88, 1.0};

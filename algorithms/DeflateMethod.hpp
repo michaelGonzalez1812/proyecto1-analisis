@@ -1,3 +1,7 @@
+//
+// Created by mike on 11/03/18.
+//
+
 #ifndef DEFA
 #define DEFA
 
@@ -19,16 +23,16 @@ namespace algoritmos {
  * @param residuo **Por definir**
  * @return Polinomio deflacionado
  */
-    template <typename T>
-    polynomial<T> deflate(const polynomial<T>& poly, const T& root, T& residuo) {
+    template<typename T>
+    polynomial<T> deflate(const polynomial<T> &poly, const T &root, T &residuo) {
         polynomial<T> resultado = poly;
 
-        residuo = resultado[ resultado.degree() ];
-        resultado[ resultado.degree() ] = 0;
+        residuo = resultado[resultado.degree()];
+        resultado[resultado.degree()] = 0;
         T auxiliar;
 
 
-        for(int i = resultado.degree() - 1; i >= 0; --i){
+        for (int i = resultado.degree() - 1; i >= 0; --i) {
             auxiliar = resultado[i];
             resultado[i] = residuo;
             residuo = auxiliar + residuo * root;
@@ -45,11 +49,11 @@ namespace algoritmos {
      * @param residuo
      * @return polinomio deflacionado
      */
-    template <typename T>
-    polynomial<std::complex<T>> deflate2(polynomial<std::complex<T>>& poly,
-                                         const std::complex<T>& root, polynomial<std::complex<T>>& residuo) {
+    template<typename T>
+    polynomial<std::complex<T>> deflate2(polynomial<std::complex<T>> &poly,
+                                         const std::complex<T> &root, polynomial<std::complex<T>> &residuo) {
 
-        polynomial<T> divisor {{root.imag()*root.imag(), 0, 1}};
+        polynomial<T> divisor{{root.imag() * root.imag(), 0, 1}};
         polynomial<std::complex<T>> divisorC = divisor;
 
         // TODO buscar una forma de instanciarlo de una forma como boost::array<std::complex<T>, poly.degree()> --> da error
@@ -62,9 +66,10 @@ namespace algoritmos {
         }
 
         for (int i = poly.degree() - 2; i >= 0; --i) {
-            resultadoArrayAux[i+1] = residuo[2+i] / divisorC[divisorC.degree()];
-            for (int j = 2+i-1; j >= i; --j) {
-                residuo[j] = residuo[j] - resultadoArrayAux[i+1] * divisorC[j-i]; //comparar esta linea con el pseudocodigo
+            resultadoArrayAux[i + 1] = residuo[2 + i] / divisorC[divisorC.degree()];
+            for (int j = 2 + i - 1; j >= i; --j) {
+                residuo[j] = residuo[j] -
+                             resultadoArrayAux[i + 1] * divisorC[j - i]; //comparar esta linea con el pseudocodigo
             }
         }
 
@@ -73,7 +78,7 @@ namespace algoritmos {
         }
 
         for (int i = 0; i <= poly.degree() - 2; ++i) {
-            resultadoArray[i] = resultadoArrayAux[i+1].real();
+            resultadoArray[i] = resultadoArrayAux[i + 1].real();
         }
 
         polynomial<T> resultadoAux(resultadoArray.begin(), resultadoArray.end());

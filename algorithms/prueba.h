@@ -10,9 +10,10 @@
 #include <iostream>
 
 using namespace std;
-
-template <typename T>
-T prueba (polynomial<T>& parametro){
+using namespace boost::math::tools; // for polynomial
+template<typename T>
+T prueba(polynomial<T> &parametro) {
     cout << parametro << endl;
 }
+
 #endif //PROYECTO_1_PRUEBA_H

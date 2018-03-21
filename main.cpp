@@ -1,26 +1,23 @@
 //#include "algorithms/deflate.h"
-#include "algorithms/rootMuller.h"
-#include <cstdlib>
-#include <iostream>
+#include "algorithms/MullerMethod.h"
 #include "algorithms/LaguerreMethod.hpp"
 
-int main(int argc, char * argv [])
-{
+int main(int argc, char *argv[]) {
 //    cout << "Numero de parametros:   " << argc << endl;
 //
 //    for (int i = 0; i < argc; i++)
 //        cout << "parametro " << i + 1 << ": " << atoi(argv[i]) + atoi(argv[i]) << endl;
-    polynomial<double> a {{1.0,2,1.0}};
+    polynomial<double> a{{1.0, 2, 1.0}};
     polynomial<std::complex<double>> temp(a);
-    std::complex<double> result=LaguerreMethod<std::complex<double>>(temp,0.0+0.0i);
-    std::cout<<(result)<<std::endl;
-    std::complex<double> result2=LaguerreMethod<double>(a,0.0);
+    std::complex<double> result = LaguerreMethod<std::complex<double>>(temp, 0.0 + 0.0i);
+    std::cout << (result) << std::endl;
+    std::complex<double> result2 = LaguerreMethod<double>(a, 0.0);
     //double result2=muller<double>(a,0.0,0.00001,0.00000001,100);
-    std::cout<<(result2)<<std::endl;
+    std::cout << (result2) << std::endl;
 
-    std::complex<float> result3=LaguerreMethod<std::complex<float>>(a,float(0));
+    std::complex<float> result3 = LaguerreMethod<std::complex<float>>(a, float(0));
     //double result2=muller<double>(a,0.0,0.00001,0.00000001,100);
-    std::cout<<(result3)<<std::endl;
+    std::cout << (result3) << std::endl;
 
     return 0;
 }
