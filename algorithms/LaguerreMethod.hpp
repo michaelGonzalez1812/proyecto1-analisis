@@ -112,27 +112,55 @@ T LaguerreMethod(const polynomial<T> &poly, T xr,
     return xr;
 }
 
-template <typename T>
-vector<T> LaguerreFull(const polynomial<T>& poly, T xr, bool pulido){
-    polynomial<T> temp(poly);
-    polynomial<std::complex<T>> tempcomplex(poly);
-    polynomial<std::complex<T>> r;
+template<typename T>
+vector<T>
+LaguerreFull(const polynomial<T> &poly, T x, T eps = sqrt(std::numeric_limits<T>::epsilon()),
+             typename std::enable_if<std::is_same<T, float>::value ||
+                                     std::is_same<T, double>::value>::type * = 0) {
+    polynomial<std::complex<T>> temp(poly);
+    std::complex<T> xr(x);
     vector<T> raices;
-    T raiz;
     std::complex<T> raiztemp;
-    T resi=0;
-    for(int i=0;i<poly.degree();i++){
-        raiztemp= LaguerreMethod<T>(temp,xr);
-        if(raiztemp.imag()==0){
-            raices.push_back(raiz);
-            temp=deflate(temp,raiz,resi);
-            tempcomplex=polynomial<std::complex<T>>(temp);
-        } else{
-            std::cout << "Se encontro una raiz imaginaria: "<<raiztemp.real()<<"+"<<raiztemp.imag()<<"i" << std::endl;
-            //tempcomplex=deflate2(temp,raiz,r);
+    T resi = T(0);
+    for (int i = 0; i < poly.degree(); i++) {
+        raiztemp = LaguerreMethod<T>(temp, xr);
+        if (raiztemp.imag() == 0 || abs(raiztemp.imag()) < eps) {
+            raices.push_back(raiztemp.real());
+            temp = deflate<std::complex<T>>(temp, raiztemp, resi);
+        } else {
+            std::cout << "Se encontro una raiz imaginaria: " << (abs(raiztemp.real()) < eps ? 0 : raiztemp.real())
+                      << "+" << (abs(raiztemp.imag()) < eps ? 0 : raiztemp.imag()) << "i"
+                      << std::endl;
+            polynomial<std::complex<T >> resi1(poly);
+            temp = deflate2<T>(temp, raiztemp, resi1);
+            i++;
         }
     }
     return raices;
 }
+
+template<typename T>
+vector<T>
+LaguerreFull(const polynomial<T> &poly, T xr, T eps = sqrt(std::numeric_limits<T>::epsilon()),
+             typename std::enable_if<boost::is_complex<T>::value, T>::type * = 0) {
+    polynomial<T> temp(poly);
+    vector<T> raices;
+    T raiztemp;
+    T resi = T(0);
+    for (int i = 0; i < poly.degree(); i++) {
+        raiztemp = LaguerreMethod<T>(temp, xr);
+        if (raiztemp.imag() == 0 || abs(raiztemp.imag()) < abs(eps)) {
+            raices.push_back(raiztemp);
+            temp = deflate<T>(temp, raiztemp, resi);
+        } else {
+            polynomial<T> resi1(poly);
+            raices.push_back(raiztemp);
+            temp = deflate2<>(temp, raiztemp, resi1);
+            i++;
+        }
+    }
+    return raices;
+}
+
 
 #endif //PROYECTO_1_LAGUERREMETHOD_H

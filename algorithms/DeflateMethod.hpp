@@ -23,14 +23,11 @@ using namespace std;
  * @return Polinomio deflacionado
  */
 template<typename T>
-polynomial<T> deflate(const polynomial<T> &poly, const T &root, T &residuo) {
+polynomial<T> deflate(const polynomial<T> &poly, const T &root, T residuo) {
     polynomial<T> resultado = poly;
-
     residuo = resultado[resultado.degree()];
-    resultado[resultado.degree()] = 0;
+    resultado[resultado.degree()] = T(0);
     T auxiliar;
-
-
     for (int i = resultado.degree() - 1; i >= 0; --i) {
         auxiliar = resultado[i];
         resultado[i] = residuo;
@@ -49,8 +46,8 @@ polynomial<T> deflate(const polynomial<T> &poly, const T &root, T &residuo) {
  * @return polinomio deflacionado
  */
 template<typename T>
-polynomial<std::complex<T>> deflate2(polynomial<std::complex<T>> &poly,
-                                     const std::complex<T> &root, polynomial<std::complex<T>> &residuo) {
+polynomial<std::complex<T>> deflate2(const polynomial<std::complex<T>> &poly,
+                                     const std::complex<T> &root, polynomial<std::complex<T>> residuo) {
 
     polynomial<T> divisor{{root.imag() * root.imag(), 0, 1}};
     polynomial<std::complex<T>> divisorC = divisor;
@@ -58,7 +55,6 @@ polynomial<std::complex<T>> deflate2(polynomial<std::complex<T>> &poly,
     // TODO buscar una forma de instanciarlo de una forma como boost::array<std::complex<T>, poly.degree()> --> da error
     boost::array<std::complex<T>, 10> resultadoArrayAux = {};
     boost::array<T, 10> resultadoArray = {};
-
     for (int i = 0; i < poly.degree(); ++i) {
         residuo[i] = poly[i];
         resultadoArrayAux[i] = 0;
