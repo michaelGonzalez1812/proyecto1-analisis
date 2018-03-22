@@ -68,6 +68,7 @@ std::complex<T> muller(const polynomial<std::complex<T>> &poly, std::complex<T> 
     }
 }
 
+//Calculo de todas las raices del polinomio
 template<typename T>
 std::vector<T> MullerFull(const polynomial<T> &poly, T xr, bool pulido) {
     polynomial<T> temp(poly);
@@ -79,13 +80,17 @@ std::vector<T> MullerFull(const polynomial<T> &poly, T xr, bool pulido) {
     T resi = 0;
     for (int i = 0; i < poly.degree(); i++) {
         raiztemp = muller<T>(temp, xr);
+        // Pulido de raices
         if (pulido) {
+            // Se llama el metodo con la raiz calculada y el polinomio original
             raiztemp = muller<T>(poly, raiztemp);
         }
+        // Se realiza la deflacion del polinomio a evaluar
         if (raiztemp.imag() == 0) {
             raices.push_back(raiz);
             temp = deflate(temp, raiz, resi);
             tempcomplex = polynomial<std::complex<T>>(temp);
+            //Si la raiz es imaginaria se muestra el mensaje
         } else {
             std::cout<<"Se encontro una raiz imaginaria:"<<raiztemp.real()<<"+"<<raiztemp.imag()<<"i" << std::endl;
         }
