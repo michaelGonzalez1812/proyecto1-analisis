@@ -1,6 +1,6 @@
 #include "algorithms/DeflateMethod.hpp"
-#include "algorithms/MullerMethod.h"
 #include "algorithms/LaguerreMethod.hpp"
+#include "algorithms/MullerMethod.hpp"
 
 int main(int argc, char *argv[]) {
 //    cout << "Numero de parametros:   " << argc << endl;
@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     polynomial<std::complex<double>> temp(a);
     std::complex<double> result = LaguerreMethod<std::complex<double>>(temp, 0.0 + 0.0i);
     std::cout << (result) << std::endl;
-    vector<double> v=LaguerreFull<double>(a,0,0);
+    vector<double> v=LaguerreFull<double>(a,0,1);
     //double result2=muller<double>(a,0.0,0.00001,0.00000001,100);
     std::cout << (v[2]) << std::endl;
 
@@ -21,7 +21,13 @@ int main(int argc, char *argv[]) {
     double kk=0.00001;
     polynomial<double> k = deflate(a,-1.0,kk);
     std::cout << (k) << std::endl;
+
+
+
+    vector<double> vector1=MullerFull<double>(a,0,1);
+    std::cout << (vector1[0]) << std::endl;
     return 0;
+
 }
 
 // Prueba Muller -----------------------------------------------
