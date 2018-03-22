@@ -2,6 +2,7 @@
 #define PROYECTO_1_ROOTMULLER_H
 
 #include "boost/math/tools/polynomial.hpp"
+#include "DeflateMethod.hpp"
 #include <complex>
 
 
@@ -18,9 +19,8 @@ using namespace boost::math::tools;
  * @return Raiz encontrada.
  */
 template<typename T>
-std::complex<T> muller(const polynomial<std::complex<T>> &poly, std::complex<T> xr, std::complex<T> h,
-                       std::complex<T> eps, int maxit) {
-
+std::complex<T> muller(const polynomial<std::complex<T>> &poly, std::complex<T> xr, std::complex<T> h = 0.0001,
+                       T eps = sqrt(std::numeric_limits<T>::epsilon()), int maxit = 100) {
     /*
      * Declaracion de constantes.
      * Error si se hace directo.
@@ -66,8 +66,36 @@ std::complex<T> muller(const polynomial<std::complex<T>> &poly, std::complex<T> 
         x1 = x2;
         x2 = xr;
     }
+}
 
-    return xr;
+//Calculo de todas las raices del polinomio
+template<typename T>
+std::vector<T> MullerFull(const polynomial<T> &poly, T xr, bool pulido) {
+    polynomial<T> temp(poly);
+    polynomial<std::complex<T>> tempcomplex(poly);
+    polynomial<std::complex<T>> r;
+    std::vector<T> raices;
+    T raiz;
+    std::complex<T> raiztemp;
+    T resi = 0;
+    for (int i = 0; i < poly.degree(); i++) {
+        raiztemp = muller<T>(temp, xr);
+        // Pulido de raices
+        if (pulido) {
+            // Se llama el metodo con la raiz calculada y el polinomio original
+            raiztemp = muller<T>(poly, raiztemp);
+        }
+        // Se realiza la deflacion del polinomio a evaluar
+        if (raiztemp.imag() == 0) {
+            raices.push_back(raiz);
+            temp = deflate(temp, raiz, resi);
+            tempcomplex = polynomial<std::complex<T>>(temp);
+            //Si la raiz es imaginaria se muestra el mensaje
+        } else {
+            std::cout<<"Se encontro una raiz imaginaria:"<<raiztemp.real()<<"+"<<raiztemp.imag()<<"i" << std::endl;
+        }
+    }
+    return raices;
 }
 
 #endif //PROYECTO_1_ROOTMULLER_H
