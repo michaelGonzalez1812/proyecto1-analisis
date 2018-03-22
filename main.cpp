@@ -3,7 +3,7 @@
 #include "algorithms/MullerMethod.hpp"
 
 int main(int argc, char *argv[]) {
-//    cout << "Numero de parametros:   " << argc << endl;
+//    cout << "Numero de parametros: << argc << endl;
 //
 //    for (int i = 0; i < argc; i++)
 //        cout << "parametro " << i + 1 << ": " << atoi(argv[i]) + atoi(argv[i]) << endl;
